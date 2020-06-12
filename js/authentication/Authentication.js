@@ -2,8 +2,8 @@ import { navComponent } from './navComponent.js';
 import { errorsComponent } from './errorsComponent.js';
 
 export function Authentication(loginPath, homePath){
-	this.loginPath = loginPath || '/login.html';
-	this.homePath = homePath || '/index.html';
+	this.loginPath = loginPath || '/tm/login.html';
+	this.homePath = homePath || '/tm/index.html';
 
 	this.init();
 }
@@ -71,8 +71,6 @@ Authentication.prototype = (function(){
 	}
 
 	function init(){
-		console.log(this.loginPath);
-		return;
 
 		try{
 			userData = JSON.parse(localStorage.getItem('userData'));
