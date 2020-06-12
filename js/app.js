@@ -7,7 +7,7 @@ let dropdown = new DropDown();
 
 
 // login
-//let auth = new Authentication();
+let auth = new Authentication();
 
 let authForm = document.forms['auth-form'];
 
