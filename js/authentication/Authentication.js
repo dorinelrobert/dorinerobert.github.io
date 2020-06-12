@@ -71,6 +71,9 @@ Authentication.prototype = (function(){
 	}
 
 	function init(){
+		console.log(this.loginPath);
+		return;
+
 		try{
 			userData = JSON.parse(localStorage.getItem('userData'));
 		} catch (error) {
