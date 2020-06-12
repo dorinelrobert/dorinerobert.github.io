@@ -19,6 +19,7 @@ Authentication.prototype = (function(){
 	}
 	
 	function displayErrors(){
+		DOM.errorContainer.innerHTML = '';
 		DOM.errorContainer.innerHTML = errorsComponent(errors);
 	}
 
@@ -36,7 +37,7 @@ Authentication.prototype = (function(){
 			throw new Error('An user is already logged in. Please logout.');
 		}
 
-		fetch('/users.json')
+		fetch('/tm/users.json')
 		.then(response => response.json())
 		.then(data => {
 		
