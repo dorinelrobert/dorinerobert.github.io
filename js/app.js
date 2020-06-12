@@ -5,7 +5,7 @@ import { DropDown } from './dropdown.js';
 // dropdown
 let dropdown = new DropDown();
 
-/*
+
 // login
 //let auth = new Authentication();
 
@@ -24,5 +24,3 @@ if(authForm){
 if(auth.isLoggedIn()){
     let taskmanager = new TaskManager(auth.getUserData().username);
 }
-
-*/
