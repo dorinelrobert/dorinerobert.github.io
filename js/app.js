@@ -5,9 +5,9 @@ import { DropDown } from './dropdown.js';
 // dropdown
 let dropdown = new DropDown();
 
-
+/*
 // login
-let auth = new Authentication();
+//let auth = new Authentication();
 
 let authForm = document.forms['auth-form'];
 
@@ -25,3 +25,4 @@ if(auth.isLoggedIn()){
     let taskmanager = new TaskManager(auth.getUserData().username);
 }
 
+*/
